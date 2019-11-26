@@ -1,80 +1,67 @@
 
-%% a)
-C1 = [1 1 1];
+%% a) Make convolutional encoder and apply it on random binary msg stream
+ 
+% Conv encoder explained:
+% https://www.youtube.com/watch?v=L_1qDvOVQCs
+
+k = 1; % number of bits per stage
+K = 2; % number of shift register stages
+n = 2; % binary addition operators win inputs taken all K stages
+constraintLength = k+K;
+%codeRate = k/n;
+% produced codewords
+C1 = [1 1 1]; 
 C2 = [1 0 1];
-n = 2;
-k = 1;
-K = 2;
+
+%Make random stream of binary data
 msg = round(rand(1,10000));
 
-G = [poly2oct(C1) poly2oct(C2)]
-conv_trellis = poly2trellis(K+k,G);
-spect = distspec(conv_trellis);
-dfree = spect.dfree
+% Create conv_encoder model
+codeGenerator = [bin2oct(C1) bin2oct(C2)];
+convTrellisModel = poly2trellis(constraintLength,codeGenerator);
 
-encoded_msg = convenc(msg,conv_trellis);
 
-%% b)
-traceback = (K+k)*5;
-traceback = traceback+mod(traceback,2);
-decoded_msg = vitdec(encoded_msg,conv_trellis,traceback,'trunc','hard');
+%apply message to conv_encoder model
+convResult = convenc(msg,convTrellisModel);
 
-BitErrorVector=xor(msg,decoded_msg);
-BER=sum(BitErrorVector)/length(msg)
+%% b) Create viterbi decoder and apply it on encoded msg from a)
 
-%% c)
-BER = 10^-4;
+% if the codeRate is 1/2 (k/n) then typical values is above 5 times of constrainthLength of the code 
+tracebackDepth = constraintLength*5; %15
 
-rx_encoded_msg = bsc(encoded_msg,BER);
+decodedMsg = vitdec(convResult,convTrellisModel,tracebackDepth,'trunc','hard');
 
-BitErrorVector=xor(encoded_msg,rx_encoded_msg);
-num_errors =sum(BitErrorVector)
-BER_encoded=sum(BitErrorVector)/length(encoded_msg)
+BitErrorVector=xor(msg,decodedMsg);
+BER=sum(BitErrorVector)/length(msg);
 
-decoded_msg = vitdec(rx_encoded_msg,conv_trellis,traceback,'trunc','hard');
+%% c) and d) simulate errors in received msg and decode it
 
-BitErrorVector=xor(msg,decoded_msg);
-BER_msg=sum(BitErrorVector)/length(msg)
+%Simulate error in first bit
+convResultError = convResult;
 
-%% d)
-
-CH_BER(1,:) = 0:10^-3:10^-2;
-CH_BER(2,:) = 0:10^-3/10:10^-2/10;
-len = length(CH_BER)
-num_sim = 5000;
-BER = zeros(1,len);
-
-h = waitbar(0,'0% Simulated...');
-for j = 1:len
-    SIM_BER_AVG = [0;0];
-    for i = 1:num_sim
-        rx_encoded_msg(1,:) = bsc(encoded_msg,CH_BER(1,j));
-        rx_encoded_msg(2,:) = bsc(encoded_msg,CH_BER(2,j));
-        
-        decoded_msg(1,:) = vitdec(rx_encoded_msg(1,:),conv_trellis,traceback,'trunc','hard');
-        decoded_msg(2,:) = vitdec(rx_encoded_msg(2,:),conv_trellis,traceback,'trunc','hard');
-        
-        BitErrorVector=xor(msg,decoded_msg(1,:));
-        SIM_BER_AVG(1) = SIM_BER_AVG(1) + sum(BitErrorVector)/length(msg) / num_sim;
-        BitErrorVector=xor(msg,decoded_msg(2,:));
-        SIM_BER_AVG(2) = SIM_BER_AVG(2) + sum(BitErrorVector)/length(msg) / num_sim;
-    end
-    waitbar(j/len,h,sprintf('%.1f%% Simulated...',j/len*100))
-    BER(1,j)=SIM_BER_AVG(1);
-    BER(2,j)=SIM_BER_AVG(2);
+errorNum = 2;
+for i=1:errorNum
+    convResultError(i) = 1 - convResultError(i);
 end
-close(h);
-figure
-plot(CH_BER(1,:),BER(1,:))
-xlabel('Channel BER')
-ylabel('Message BER')
-title('Convolutional Encoding BER in Binary symmetric channel')
+
+decodedMsgWithFix = vitdec(convResultError,convTrellisModel,tracebackDepth,'trunc','hard');
+
+% after small testing we found out can fix 2 errors at most.
+% error correction capabilty is 2 bits in windwos of 6 bits
+% formula: (dFree-1)/2
+
+%compare original msg with msg after decoding (including error)
+BitErrorVector=xor(msg,decodedMsgWithFix);
+BER=sum(BitErrorVector)/length(msg);
 
 
-figure
-plot(CH_BER(2,:),BER(2,:))
-xlabel('Channel BER')
-ylabel('Message BER')
-title('Convolutional Encoding BER in Binary symmetric channel')
+function [ out ] = bin2oct( input )
 
+    [m, n] = size(input);
+    for i = 1:m
+        dec = bin2dec(num2str(input(i,:)));
+        octa = dec2base(dec,8);
+        out(i) = str2num(octa);
+    end
+end
 
