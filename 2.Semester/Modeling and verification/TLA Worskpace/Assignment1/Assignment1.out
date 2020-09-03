@@ -1,0 +1,380 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.14 of 10 July 2019 (rev: 0cae24f)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 4 and seed 4428862257608048014 with 1 worker on 12 cores with 3607MB heap and 64MB offheap memory (Windows 10 10.0 amd64, Oracle Corporation 1.8.0_241 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file D:\GDrive\School\Aarhus_uni\2.Semester\Modeling and verification\TLA Worskpace\Assignment1\Assignment1.tla
+Parsing file C:\Users\tomko\AppData\Local\Temp\Naturals.tla
+Parsing file C:\Users\tomko\AppData\Local\Temp\Sequences.tla
+Parsing file D:\GDrive\School\Aarhus_uni\2.Semester\Modeling and verification\TLA Worskpace\Assignment1\Channel.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module Channel
+Semantic processing of module Assignment1
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2020-02-20 15:24:21)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2269:0 @!@!@
+Computed 2 initial states...
+@!@!@ENDMSG 2269 @!@!@
+@!@!@STARTMSG 2269:0 @!@!@
+Computed 4 initial states...
+@!@!@ENDMSG 2269 @!@!@
+@!@!@STARTMSG 2269:0 @!@!@
+Computed 8 initial states...
+@!@!@ENDMSG 2269 @!@!@
+@!@!@STARTMSG 2269:0 @!@!@
+Computed 16 initial states...
+@!@!@ENDMSG 2269 @!@!@
+@!@!@STARTMSG 2269:0 @!@!@
+Computed 32 initial states...
+@!@!@ENDMSG 2269 @!@!@
+@!@!@STARTMSG 2269:0 @!@!@
+Computed 64 initial states...
+@!@!@ENDMSG 2269 @!@!@
+@!@!@STARTMSG 2269:0 @!@!@
+Computed 128 initial states...
+@!@!@ENDMSG 2269 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 144 distinct states generated at 2020-02-20 15:24:22.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(11) at 2020-02-20 15:24:25: 761,336 states generated (761,336 s/min), 477,445 distinct states found (477,445 ds/min), 222,648 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(15) at 2020-02-20 15:25:25: 19,282,296 states generated (18,520,960 s/min), 13,105,786 distinct states found (12,628,341 ds/min), 7,548,767 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2020-02-20 15:25:25
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 12, col 1 to line 12, col 4 of module Assignment1>: 144:144
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 9, col 16 to line 9, col 38 of module Channel: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 10, col 12 to line 10, col 30 of module Channel: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 9, col 16 to line 9, col 38 of module Channel: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 10, col 12 to line 10, col 30 of module Channel: 288
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 14, col 12 to line 14, col 19 of module Assignment1: 144
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SSend line 20, col 1 to line 20, col 10 of module Assignment1>: 8631492:9802080
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 12, col 15 to line 12, col 33 of module Channel: 43145382
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 12, col 15 to line 12, col 22 of module Channel: 33343320
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 12, col 26 to line 12, col 33 of module Channel: 33343332
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 13, col 15 to line 13, col 60 of module Channel: 9802080
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 20, col 30 to line 20, col 32 of module Assignment1: 9802080
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 21, col 18 to line 21, col 37 of module Assignment1: 9802080
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<BufRcv line 23, col 1 to line 23, col 6 of module Assignment1>: 3912229:3923565
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 23, col 14 to line 23, col 23 of module Assignment1: 3923572
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 23, col 14 to line 23, col 19 of module Assignment1: 5557257
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 23, col 23 to line 23, col 23 of module Assignment1: 5557260
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 8, col 41 to line 8, col 47 of module Assignment1: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 8, col 58 to line 8, col 59 of module Assignment1: 91527438
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 15, col 11 to line 15, col 29 of module Channel: 9480864
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 15, col 11 to line 15, col 18 of module Channel: 5557276
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 15, col 22 to line 15, col 29 of module Channel: 5557279
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 16, col 11 to line 16, col 43 of module Channel: 3923603
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 25, col 14 to line 25, col 33 of module Assignment1: 3923610
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 25, col 19 to line 25, col 33 of module Assignment1: 3923616
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 26, col 14 to line 26, col 26 of module Assignment1: 3923571
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<BufSend line 28, col 1 to line 28, col 7 of module Assignment1>: 438308:5078519
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 28, col 15 to line 28, col 22 of module Assignment1: 10635864
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 28, col 15 to line 28, col 15 of module Assignment1: 5557340
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 28, col 19 to line 28, col 22 of module Assignment1: 5557346
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 12, col 15 to line 12, col 33 of module Channel: 10635328
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 12, col 15 to line 12, col 22 of module Channel: 5556781
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 12, col 15 to line 12, col 18 of module Channel: 5556785
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 12, col 26 to line 12, col 33 of module Channel: 5556789
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 12, col 26 to line 12, col 29 of module Channel: 5556793
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 13, col 15 to line 13, col 60 of module Channel: 5078574
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 13, col 23 to line 13, col 60 of module Channel: 5078579
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 13, col 24 to line 13, col 27 of module Channel: 5078583
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 13, col 36 to line 13, col 44 of module Channel: 5078529
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 13, col 47 to line 13, col 59 of module Channel: 5078530
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 29, col 28 to line 29, col 34 of module Assignment1: 5078597
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 30, col 15 to line 30, col 26 of module Assignment1: 5078602
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 31, col 15 to line 31, col 26 of module Assignment1: 5078531
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<RRcv line 33, col 1 to line 33, col 4 of module Assignment1>: 123840:478512
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 9, col 42 to line 9, col 48 of module Assignment1: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 9, col 59 to line 9, col 61 of module Assignment1: 27786299
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 15, col 11 to line 15, col 29 of module Channel: 6035949
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 15, col 11 to line 15, col 18 of module Channel: 5557442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 15, col 22 to line 15, col 29 of module Channel: 5557447
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 15, col 22 to line 15, col 25 of module Channel: 5557451
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 16, col 11 to line 16, col 43 of module Channel: 478512
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 34, col 12 to line 34, col 30 of module Assignment1: 478512
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(16) at 2020-02-20 15:26:25: 36,587,832 states generated (17,305,536 s/min), 23,980,172 distinct states found (10,874,386 ds/min), 12,434,815 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(16) at 2020-02-20 15:27:25: 59,130,562 states generated (22,542,730 s/min), 42,944,287 distinct states found (18,964,115 ds/min), 27,820,303 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2020-02-20 15:27:25
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 12, col 1 to line 12, col 4 of module Assignment1>: 144:144
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 9, col 16 to line 9, col 38 of module Channel: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 10, col 12 to line 10, col 30 of module Channel: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 9, col 16 to line 9, col 38 of module Channel: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 10, col 12 to line 10, col 30 of module Channel: 288
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 14, col 12 to line 14, col 19 of module Assignment1: 144
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SSend line 20, col 1 to line 20, col 10 of module Assignment1>: 31859124:34659407
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 12, col 15 to line 12, col 33 of module Channel: 125403564
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 12, col 15 to line 12, col 22 of module Channel: 90744150
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 12, col 26 to line 12, col 33 of module Channel: 90744156
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 13, col 15 to line 13, col 60 of module Channel: 34659437
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 13, col 23 to line 13, col 60 of module Channel: 34659443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 13, col 24 to line 13, col 27 of module Channel: 34659448
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 13, col 36 to line 13, col 44 of module Channel: 34659417
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 13, col 47 to line 13, col 59 of module Channel: 34659417
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 20, col 30 to line 20, col 32 of module Assignment1: 34659470
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 21, col 18 to line 21, col 37 of module Assignment1: 34659418
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<BufRcv line 23, col 1 to line 23, col 6 of module Assignment1>: 9291496:9347454
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 23, col 14 to line 23, col 23 of module Assignment1: 9347454
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 23, col 14 to line 23, col 19 of module Assignment1: 15124049
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 23, col 23 to line 23, col 23 of module Assignment1: 15124051
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 8, col 41 to line 8, col 47 of module Assignment1: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 8, col 58 to line 8, col 59 of module Assignment1: 248139133
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 15, col 11 to line 15, col 29 of module Channel: 20669129
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 15, col 11 to line 15, col 18 of module Channel: 11321671
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 15, col 22 to line 15, col 29 of module Channel: 11321671
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 16, col 11 to line 16, col 43 of module Channel: 9347460
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 25, col 14 to line 25, col 33 of module Assignment1: 9347460
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 26, col 14 to line 26, col 26 of module Assignment1: 9347454
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<BufSend line 28, col 1 to line 28, col 7 of module Assignment1>: 1581313:13402001
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 28, col 15 to line 28, col 22 of module Assignment1: 28526108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 28, col 15 to line 28, col 15 of module Assignment1: 15124099
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 28, col 19 to line 28, col 22 of module Assignment1: 15124102
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 12, col 15 to line 12, col 33 of module Channel: 28525546
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 12, col 15 to line 12, col 22 of module Channel: 15123533
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 12, col 26 to line 12, col 33 of module Channel: 15123535
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 13, col 15 to line 13, col 60 of module Channel: 13402023
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 13, col 23 to line 13, col 60 of module Channel: 13402025
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 29, col 28 to line 29, col 34 of module Assignment1: 13402027
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 30, col 15 to line 30, col 26 of module Assignment1: 13402029
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 31, col 15 to line 31, col 26 of module Assignment1: 13402012
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<RRcv line 33, col 1 to line 33, col 4 of module Assignment1>: 212400:1721802
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 9, col 42 to line 9, col 48 of module Assignment1: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 9, col 59 to line 9, col 61 of module Assignment1: 75619806
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 15, col 11 to line 15, col 29 of module Channel: 16845938
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 15, col 11 to line 15, col 18 of module Channel: 15124137
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 15, col 22 to line 15, col 29 of module Channel: 15124144
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 16, col 11 to line 16, col 43 of module Channel: 1721803
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 34, col 12 to line 34, col 30 of module Assignment1: 1721802
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(17) at 2020-02-20 15:28:25: 81,163,919 states generated (22,033,357 s/min), 61,229,088 distinct states found (18,284,801 ds/min), 42,624,929 states left on queue.
+@!@!@ENDMSG 2200 @!@!@

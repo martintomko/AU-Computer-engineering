@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Exercise1_1</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>toolbox.builder.TLAParserBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>toolbox.builder.PCalAlgorithmSearchingBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>toolbox.natures.TLANature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Dekkers1.tla</name>
+			<type>1</type>
+			<location>D:/GDrive/School/Aarhus_uni/2.Semester/Modeling and verification/TLA Worskpace/Week3/Dekkers1.tla</location>
+		</link>
+		<link>
+			<name>Exercise1.tla</name>
+			<type>1</type>
+			<location>D:/GDrive/School/Aarhus_uni/2.Semester/Modeling and verification/TLA Worskpace/Week3/Exercise1.tla</location>
+		</link>
+		<link>
+			<name>MyDekker.tla</name>
+			<type>1</type>
+			<location>D:/GDrive/School/Aarhus_uni/2.Semester/Modeling and verification/TLA Worskpace/Week3/MyDekker.tla</location>
+		</link>
+	</linkedResources>
+</projectDescription>

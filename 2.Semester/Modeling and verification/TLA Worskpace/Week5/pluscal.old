@@ -1,0 +1,26 @@
+----------------------------- MODULE pluscal -----------------------------
+
+EXTENDS Naturals, TLC
+CONSTANT K
+
+Divides(i,j) == \E k \in {0..j}: j=i*K
+
+IsGCD(i,j,k) == /\ Divides(i,j)
+                /\ Divides(i,k)
+                /\ \A r \in {0..j} \union {0..k}: Divides(r,j) /\ Divides(r,k) => Divides(r,i)
+
+
+
+=============================================================================
+(*--algorithm EuclidSedgewick
+variables m \in {1..K}, n \in {1..K}, u = m, v = n
+begin while u # 0 do
+        if u < v then u := v || v := u end if;
+        u := u - v
+      end while;
+      assert IsGCD(v, m, n)
+end algorithm*)
+
+\* BEGIN TRANSLATION
+\* END TRANSLATION
+=============================================================================
