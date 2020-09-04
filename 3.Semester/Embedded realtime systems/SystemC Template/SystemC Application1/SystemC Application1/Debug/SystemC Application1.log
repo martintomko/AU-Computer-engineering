@@ -1,0 +1,2 @@
+﻿SystemC.lib(sc_main_main.obj) : error LNK2019: unresolved external symbol _sc_main referenced in function _sc_elab_and_sim
+D:\GDrive\School\Aarhus_uni\3.Semester\Embedded realtime systems\SystemC Template\SystemC Application1\Debug\SystemC Application1.exe : fatal error LNK1120: 1 unresolved externals
